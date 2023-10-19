@@ -9,6 +9,7 @@ Bullet::Bullet(Vec2 _pos)
 	moveDir_ = { 0, -1 };
 	isAlive_ = true;
 	SetCharaRect(Vec2{ BULLET_RECT_SIZE, BULLET_RECT_SIZE});
+	double* p = new double[512];
 }
 
 void Bullet::Update()

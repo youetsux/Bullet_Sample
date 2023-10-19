@@ -23,16 +23,16 @@ void Main()
 		for (int i = 0; i < Gun.size(); i++)
 			Gun[i]->Draw();
 		Print << Gun.size();
-		vector<Bullet*>::iterator theI;
-		for (theI = Gun.begin(); theI != Gun.end();)
-		{
-			if ((*theI)->isAlive_ == false) {
-				delete* theI;//箱の中身＝Bulletそのもの
-				theI = Gun.erase(theI); //箱自体
-			}
-			else
-				theI++;
-		}
+		//vector<Bullet*>::iterator theI;
+		//for (theI = Gun.begin(); theI != Gun.end();)
+		//{
+		//	if ((*theI)->isAlive_ == false) {
+		//		delete* theI;//箱の中身＝Bulletそのもの
+		//		theI = Gun.erase(theI); //箱自体
+		//	}
+		//	else
+		//		theI++;
+		//}
 
 
 	}
